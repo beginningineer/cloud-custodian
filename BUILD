@@ -12,7 +12,7 @@ py_binary(
     data = glob(["env/*"]),
     main = "//c7n:cli.py",
     deps = [
-        "//c7n",
+        "//c7n:cli",
     ],
 )
 
@@ -28,7 +28,7 @@ py_binary(
     data = glob(["env/*"]),
     main = "//c7n:cli.py",
     deps = [
-        "//c7n",
+        "//c7n:cli",
         "//tools/c7n_gcp/c7n_gcp:entry",
     ],
     imports = [
